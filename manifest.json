@@ -1,0 +1,22 @@
+{
+  "name": "LMNTrix Private Clubhouse",
+  "short_name": "LMNTrix",
+  "description": "Private digital clubhouse for the inner circle",
+  "start_url": "./index.php",
+  "display": "standalone",
+  "background_color": "#e4ebf0",
+  "theme_color": "#e4ebf0",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

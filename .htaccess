@@ -1,0 +1,21 @@
+# LMNTrix Apache Configuration for Shared Hosting (InfinityFree)
+
+Options -Indexes
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Protect config files and database files
+<FilesMatch "\.(sql|sqlite|log|json|md)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow manifest.json
+<Files "manifest.json">
+    Order allow,deny
+    Allow from all
+</Files>
